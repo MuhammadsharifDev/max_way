@@ -13,7 +13,7 @@ class BasketPage extends StatelessWidget {
     var saveProductBox = Hive.box('saveProducts');
     return Scaffold(
       appBar: AppBar(
-        title: Text("Basket Page"),
+        title: const Text("Basket Page"),
       ),
       body: ListView.builder(
         shrinkWrap: true,
