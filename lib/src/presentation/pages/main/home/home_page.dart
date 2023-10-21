@@ -248,7 +248,7 @@ class _HomePageState extends State<HomePage> {
                                       child: Text(
                                         (item.title?.uz).toString(),
                                         style: const TextStyle(
-                                            fontSize: 28,
+                                            fontSize: 20,
                                             fontWeight: FontWeight.w600),
                                       ),
                                     );
@@ -403,7 +403,7 @@ class _HomePageState extends State<HomePage> {
                                         child: Text(
                                           item.toString(),
                                           style: const TextStyle(
-                                              fontSize: 28,
+                                              fontSize: 20,
                                               fontWeight:
                                               FontWeight.w600),
                                         ),
