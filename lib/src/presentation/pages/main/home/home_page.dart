@@ -333,8 +333,8 @@ class _HomePageState extends State<HomePage> {
                                                   .image!
                                                   .isEmpty
                                                   ? SizedBox(
-                                                  width: 120,
-                                                  height: 120,
+                                                  width: 120.w,
+                                                  height: 120.h,
                                                   child: Image.asset(
                                                       'assets/png_image/splash.png'))
                                                   : Image.network(
@@ -476,8 +476,8 @@ class _HomePageState extends State<HomePage> {
                                                   .image!
                                                   .isEmpty
                                                   ? SizedBox(
-                                                  width: 120,
-                                                  height: 120,
+                                                  width: 120.w,
+                                                  height: 120.h,
                                                   child: Image.asset(
                                                       'assets/png_image/splash.png'))
                                                   : Image.network(
