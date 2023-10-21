@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         child: ScreenUtilInit(
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            initialRoute: RouteName.login,
+            initialRoute: RouteName.main,
             onGenerateRoute: AppRoutes.onGenerateRoute,
           ),
         ),
