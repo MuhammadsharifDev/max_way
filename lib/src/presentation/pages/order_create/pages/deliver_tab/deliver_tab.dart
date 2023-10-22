@@ -61,7 +61,7 @@ class _DeliverTabState extends State<DeliverTab> with DeliverMixin {
                           Row(
                             children: [
                               Radio(
-                                activeColor: AppColors.defaultYellow,
+                                activeColor: AppColors.defaultInkColor,
                                 value: 1,
                                 groupValue: value1,
                                 onChanged: (value) => setState(() {
@@ -78,7 +78,7 @@ class _DeliverTabState extends State<DeliverTab> with DeliverMixin {
                           Row(
                             children: [
                               Radio(
-                                activeColor: AppColors.defaultYellow,
+                                activeColor: AppColors.defaultInkColor,
                                 value: 2,
                                 groupValue: value1,
                                 onChanged: (value) => setState(() {
@@ -113,7 +113,7 @@ class _DeliverTabState extends State<DeliverTab> with DeliverMixin {
                             title: CustomText.items(
                                 text: 'Срочная доставка', size: 15),
                             trailing: Radio(
-                              activeColor: AppColors.defaultYellow,
+                              activeColor: AppColors.defaultInkColor,
                               value: 1,
                               groupValue: value2,
                               onChanged: (value) => setState(() {
@@ -130,7 +130,7 @@ class _DeliverTabState extends State<DeliverTab> with DeliverMixin {
                             title: CustomText.items(
                                 text: 'Доставка по расписанию', size: 15),
                             trailing: Radio(
-                              activeColor: AppColors.defaultYellow,
+                              activeColor: AppColors.defaultInkColor,
                               value: 2,
                               groupValue: value2,
                               onChanged: (value) => setState(() {
@@ -196,7 +196,7 @@ class _DeliverTabState extends State<DeliverTab> with DeliverMixin {
                             leading: SvgPicture.asset(AppIcons.moneyIcon),
                             title: CustomText.items(text: 'Наличные', size: 15),
                             trailing: Radio(
-                              activeColor: AppColors.defaultYellow,
+                              activeColor: AppColors.defaultInkColor,
                               value: 1,
                               groupValue: value3,
                               onChanged: (value) => setState(() {
@@ -211,7 +211,7 @@ class _DeliverTabState extends State<DeliverTab> with DeliverMixin {
                             leading: SvgPicture.asset(AppIcons.paymeIcon),
                             title: CustomText.items(text: 'Payme', size: 15),
                             trailing: Radio(
-                              activeColor: AppColors.defaultYellow,
+                              activeColor: AppColors.defaultInkColor,
                               value: 2,
                               groupValue: value3,
                               onChanged: (value) => setState(() {
@@ -226,7 +226,7 @@ class _DeliverTabState extends State<DeliverTab> with DeliverMixin {
                             leading: SvgPicture.asset(AppIcons.clickIcon),
                             title: CustomText.items(text: 'Click', size: 15),
                             trailing: Radio(
-                              activeColor: AppColors.defaultYellow,
+                              activeColor: AppColors.defaultInkColor,
                               value: 3,
                               groupValue: value3,
                               onChanged: (value) => setState(() {

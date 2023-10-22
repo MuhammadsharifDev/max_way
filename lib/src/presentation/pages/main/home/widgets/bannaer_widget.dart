@@ -48,7 +48,7 @@ class BannerWidget extends StatelessWidget {
                 controller: controller,
                 count: 2,
                 effect: const ExpandingDotsEffect(
-                  activeDotColor: AppColors.defaultYellow,
+                  activeDotColor: AppColors.defaultInkColor,
                   dotColor: AppColors.whiteColors,
                   dotHeight: 4,
                   dotWidth: 8,

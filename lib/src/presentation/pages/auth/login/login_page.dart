@@ -61,16 +61,16 @@ class _LoginPageState extends State<LoginPage> {
                     maxLength: 9,
                     controller: phoneNumber,
                     decoration: InputDecoration(
-                      fillColor: AppColors.defaultYellow,
+                      fillColor: AppColors.defaultInkColor,
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide:
-                            const BorderSide(color: AppColors.defaultYellow),
+                            const BorderSide(color: AppColors.defaultInkColor),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide:
-                            const BorderSide(color: AppColors.defaultYellow),
+                            const BorderSide(color: AppColors.defaultInkColor),
                       ),
                       suffixText: '',
                       // Empty suffix text
@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(11),
                       ),
-                      backgroundColor: AppColors.defaultYellow,
+                      backgroundColor: AppColors.defaultInkColor,
                       minimumSize: const Size(
                         double.infinity,
                         55,

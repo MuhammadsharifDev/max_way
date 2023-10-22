@@ -13,7 +13,7 @@ class GlobalButton extends StatelessWidget {
     return MaterialButton(
       elevation: 0,
       height: 52.h,
-      color: AppColors.defaultYellow,
+      color: AppColors.defaultInkColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.r),
       ),

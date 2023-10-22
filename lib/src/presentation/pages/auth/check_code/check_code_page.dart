@@ -49,7 +49,7 @@ class _CheckCodePageState extends State<CheckCodePage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(11),
                   ),
-                  backgroundColor: AppColors.defaultYellow,
+                  backgroundColor: AppColors.defaultInkColor,
                   minimumSize: const Size(
                     double.infinity,
                     55,

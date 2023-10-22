@@ -20,11 +20,11 @@ class AddressTextField extends StatelessWidget {
           fontFamily: 'Poppins',
           fontWeight: FontWeight.w400,
         ),
-        fillColor: AppColors.defaultYellow,
+        fillColor: AppColors.defaultInkColor,
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.0),
           borderSide: const BorderSide(
-            color: AppColors.defaultYellow,
+            color: AppColors.defaultInkColor,
           ),
         ),
         enabledBorder: OutlineInputBorder(

@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                                 Container(
                                   decoration: BoxDecoration(
                                     color: isActive
-                                        ? Colors.amber
+                                        ? AppColors.defaultInkColor
                                         : AppColors.whiteColors,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
@@ -189,7 +189,7 @@ class _HomePageState extends State<HomePage> {
                         controller: _controller,
                         count: 2,
                         effect: const ExpandingDotsEffect(
-                            activeDotColor: AppColors.defaultYellow,
+                            activeDotColor: AppColors.defaultInkColor,
                             dotColor: AppColors.whiteColors,
                             dotHeight: 4,
                             dotWidth: 8,
@@ -280,11 +280,7 @@ class _HomePageState extends State<HomePage> {
                                                     .start,
                                                 children: [
                                                   SizedBox(
-                                                    width:
-                                                    MediaQuery.sizeOf(
-                                                        context)
-                                                        .width -
-                                                        150,
+                                                    width:150.w,
                                                     child: Text(
                                                       '${productItem.title!.uz}',
                                                       style:
@@ -333,8 +329,8 @@ class _HomePageState extends State<HomePage> {
                                                   .image!
                                                   .isEmpty
                                                   ? SizedBox(
-                                                  width: 120.w,
-                                                  height: 120.h,
+                                                  width: 80.w,
+                                                 height: 80.h,
                                                   child: Image.asset(
                                                       'assets/png_image/splash.png'))
                                                   : Image.network(
@@ -423,11 +419,7 @@ class _HomePageState extends State<HomePage> {
                                                     .start,
                                                 children: [
                                                   SizedBox(
-                                                    width:
-                                                    MediaQuery.sizeOf(
-                                                        context)
-                                                        .width -
-                                                        150,
+                                                    width:150.w,
                                                     child: Text(
                                                       '${productItem.title!.uz}',
                                                       style:
@@ -476,8 +468,8 @@ class _HomePageState extends State<HomePage> {
                                                   .image!
                                                   .isEmpty
                                                   ? SizedBox(
-                                                  width: 120.w,
-                                                  height: 120.h,
+                                                  width: 80.w,
+                                                 height: 80.h,
                                                   child: Image.asset(
                                                       'assets/png_image/splash.png'))
                                                   : Image.network(

@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: state.bottomMenu.index,
             unselectedItemColor: AppColors.defaultGrey,
-            selectedItemColor: AppColors.defaultYellow,
+            selectedItemColor: AppColors.defaultInkColor,
             showUnselectedLabels: true,
             unselectedFontSize: 14,
             type: BottomNavigationBarType.fixed,
@@ -44,7 +44,7 @@ class MainPage extends StatelessWidget {
                   icon: SvgPicture.asset('assets/svg_icon/ic_home.svg',
                       colorFilter: ColorFilter.mode(
                           state.bottomMenu.index == 0
-                              ? AppColors.defaultYellow
+                              ? AppColors.defaultInkColor
                               : AppColors.defaultGrey,
                           BlendMode.srcIn)),
                   label: 'Home'),
@@ -52,7 +52,7 @@ class MainPage extends StatelessWidget {
                   icon: SvgPicture.asset('assets/svg_icon/ic_basket.svg',
                       colorFilter: ColorFilter.mode(
                           state.bottomMenu.index == 1
-                              ? AppColors.defaultYellow
+                              ? AppColors.defaultInkColor
                               : AppColors.defaultGrey,
                           BlendMode.srcIn)),
                   label: 'Basket'),
@@ -60,7 +60,7 @@ class MainPage extends StatelessWidget {
                   icon: SvgPicture.asset('assets/svg_icon/ic_order.svg',
                       colorFilter: ColorFilter.mode(
                           state.bottomMenu.index == 2
-                              ? AppColors.defaultYellow
+                              ? AppColors.defaultInkColor
                               : AppColors.defaultGrey,
                           BlendMode.srcIn)),
                   label: 'Orders'),
@@ -69,7 +69,7 @@ class MainPage extends StatelessWidget {
                     'assets/svg_icon/ic_profile.svg',
                     colorFilter: ColorFilter.mode(
                         state.bottomMenu.index == 3
-                            ? AppColors.defaultYellow
+                            ? AppColors.defaultInkColor
                             : AppColors.defaultGrey,
                         BlendMode.srcIn),
                   ),

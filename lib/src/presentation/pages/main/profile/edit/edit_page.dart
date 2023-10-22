@@ -141,7 +141,7 @@ class _EditPageState extends State<EditPage> with EditMixin {
           child: ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.defaultYellow,
+              backgroundColor: AppColors.defaultInkColor,
               minimumSize: const Size(double.infinity, 52),
             ),
             child: CustomText.items(text: 'Сохранить', size: 15),

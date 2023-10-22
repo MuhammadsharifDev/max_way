@@ -111,7 +111,7 @@ class _SettingPageState extends State<SettingPage> {
                   title: CustomText.items(text: 'Уведомление', size: 15),
                   trailing: CupertinoSwitch(
                     value: switchValue,
-                    activeColor: AppColors.defaultYellow,
+                    activeColor: AppColors.defaultInkColor,
                     onChanged: (bool? value) {
                       setState(() {
                         switchValue = value ?? false;
