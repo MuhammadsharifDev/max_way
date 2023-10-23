@@ -13,11 +13,11 @@ class BasketPage extends StatefulWidget {
 }
 
 class _BasketPageState extends State<BasketPage> {
-  var saveProductBox = Hive.box('saveProducts');
+
 
   @override
   Widget build(BuildContext context) {
-
+    var saveProductBox = Hive.box('saveProducts');
     return Scaffold(
       appBar: AppBar(
         title: const Text("Basket Page"),

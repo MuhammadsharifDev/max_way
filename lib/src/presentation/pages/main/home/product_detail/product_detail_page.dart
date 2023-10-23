@@ -25,9 +25,10 @@ class ProductDetail extends StatefulWidget {
 class _ProductDetailState extends State<ProductDetail> {
   String? svet;
 
-  var saveProductBox = Hive.box('saveProducts');
+
   @override
   Widget build(BuildContext context) {
+    var saveProductBox = Hive.box('saveProducts');
     return BlocConsumer<ProductDetailBloc, ProductDetailState>(
       listener: (context, state) {},
       builder: (_, state) {
