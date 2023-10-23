@@ -13,11 +13,11 @@ import 'package:path_provider/path_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await init();
   final appDocumentary = await getApplicationDocumentsDirectory();
   Hive.init(appDocumentary.path);
   await Hive.openBox("saveProducts");
   Hive.registerAdapter(SavedProductAdapter());
-  await init();
   runApp(const MyApp());
 }
 

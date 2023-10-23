@@ -5,12 +5,19 @@ import 'package:exam_max_way/src/core/routes/routes_name.dart';
 import 'package:exam_max_way/src/core/widgets/global_button.dart';
 import 'package:exam_max_way/src/domain/network/saved_product.dart';
 
-class BasketPage extends StatelessWidget {
+class BasketPage extends StatefulWidget {
   const BasketPage({super.key,});
 
   @override
+  State<BasketPage> createState() => _BasketPageState();
+}
+
+class _BasketPageState extends State<BasketPage> {
+  var saveProductBox = Hive.box('saveProducts');
+
+  @override
   Widget build(BuildContext context) {
-    var saveProductBox = Hive.box('saveProducts');
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Basket Page"),

@@ -1,3 +1,4 @@
+import 'package:exam_max_way/src/core/widgets/toast_wdget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,10 +25,9 @@ class ProductDetail extends StatefulWidget {
 class _ProductDetailState extends State<ProductDetail> {
   String? svet;
 
-
+  var saveProductBox = Hive.box('saveProducts');
   @override
   Widget build(BuildContext context) {
-    var saveProductBox = Hive.box('saveProducts');
     return BlocConsumer<ProductDetailBloc, ProductDetailState>(
       listener: (context, state) {},
       builder: (_, state) {
@@ -51,7 +51,7 @@ class _ProductDetailState extends State<ProductDetail> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(
-                        height: 80,
+                        height: 100.h,
                         width: double.infinity,
                         child: Material(
                           borderRadius: BorderRadius.circular(15),
@@ -63,7 +63,7 @@ class _ProductDetailState extends State<ProductDetail> {
                               children: [
                                 CustomText.items(
                                     text: widget.arguments.productName,
-                                    size: 25),
+                                    size: 20),
                                 SizedBox(
                                   height: 10.h,
                                 ),
@@ -164,8 +164,16 @@ class _ProductDetailState extends State<ProductDetail> {
                           coast: widget.arguments.productName,
                           image: 'assets/png_image/burger.jpg'),
                       );
-                      setState(() {});
-                  print(saveProductBox.name);
+                        if(saveProductBox.isNotEmpty){
+                          getMyToast(message: 'Saved Product');
+                        }else{
+                           showModalBottomSheet(
+                              context: context,
+                              builder: (context) {
+                                return Text('Error',style: TextStyle(color: Colors.red),);
+                              },
+                          );
+                        }
                     },
                   ),
                 ],
